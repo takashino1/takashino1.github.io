@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咸豆浆-地道风味做法与早餐文化指南</title>
+    <meta name="description" content="深入解读咸豆浆的起源与地域特色，分享家常咸豆浆的详细做法、配料搭配技巧、营养价值以及常见问题，带你领略这一碗充满烟火气的江南早餐风味。">
+    <meta name="keywords" content="咸豆浆,咸豆浆做法,咸豆浆配料,上海咸豆浆,咸浆,早餐食谱,传统美食">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background: #f7f3ec;
+            color: #3e2c1e;
+            line-height: 1.75;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: #fffdf8;
+            border-bottom: 3px solid #d9a066;
+            padding: 18px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            font-size: 2rem;
+            background: #e8c9a0;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #5a3e1e;
+        }
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #4a2e12;
+            letter-spacing: 2px;
+        }
+        .logo-text span {
+            color: #a5672f;
+        }
+        .header-search {
+            display: flex;
+            background: #f3e9dc;
+            border-radius: 30px;
+            padding: 5px 5px 5px 18px;
+            border: 1px solid #d9c3a8;
+        }
+        .header-search input {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 0.95rem;
+            width: 220px;
+            color: #3e2c1e;
+        }
+        .header-search button {
+            background: #b57a3e;
+            border: none;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .header-search button:hover {
+            background: #94602f;
+        }
+
+        /* 导航 */
+        .main-nav {
+            background: #5a3a1e;
+            margin-top: 18px;
+            border-radius: 40px;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .main-nav li a {
+            display: block;
+            padding: 12px 24px;
+            color: #fff2e0;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+        }
+        .main-nav li a:hover,
+        .main-nav li a.active {
+            background: #b57a3e;
+            color: white;
+        }
+
+        /* 主视觉 */
+        .hero {
+            background: linear-gradient(135deg, #f5e6d0 0%, #e8c9a0 100%);
+            margin-top: 30px;
+            border-radius: 20px;
+            padding: 50px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            box-shadow: 0 8px 20px rgba(90, 60, 30, 0.1);
+        }
+        .hero-text {
+            flex: 1 1 400px;
+        }
+        .hero-text h1 {
+            font-size: 2.6rem;
+            color: #3a2208;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            letter-spacing: 1px;
+        }
+        .hero-text p {
+            font-size: 1.1rem;
+            color: #5c4428;
+            max-width: 550px;
+            margin-bottom: 25px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: #fff2e0;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #8a5a2b;
+            border: 1px solid #d9a066;
+            font-weight: 500;
+        }
+        .hero-img {
+            flex: 0 0 260px;
+            text-align: center;
+            background: #fff8ee;
+            border-radius: 50%;
+            width: 260px;
+            height: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 3px solid #fff;
+        }
+        .hero-img .bowl {
+            font-size: 4rem;
+            line-height: 1;
+        }
+        .hero-img .caption {
+            font-size: 0.9rem;
+            color: #7a5e3e;
+            margin-top: 8px;
+            letter-spacing: 1px;
+        }
+
+        /* 特色卡片 */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin: 50px 0;
+        }
+        .feature-card {
+            background: #fffdf8;
+            border-radius: 16px;
+            padding: 28px 22px;
+            border: 1px solid #ecdcbf;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+        }
+        .feature-card .icon {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .feature-card h3 {
+            font-size: 1.2rem;
+            color: #4a2e12;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            color: #6b4c2a;
+            font-size: 0.95rem;
+        }
+
+        /* 内容区 */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 40px;
+            margin: 30px 0 50px;
+        }
+        .main-content {
+            background: #fffdf8;
+            border-radius: 20px;
+            padding: 36px;
+            border: 1px solid #ecdcbf;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+        .main-content h2 {
+            font-size: 1.8rem;
+            color: #3a2208;
+            border-left: 5px solid #b57a3e;
+            padding-left: 18px;
+            margin: 35px 0 20px;
+        }
+        .main-content h2:first-child {
+            margin-top: 0;
+        }
+        .main-content h3 {
+            font-size: 1.3rem;
+            color: #5a3a1e;
+            margin: 25px 0 12px;
+        }
+        .main-content p {
+            margin-bottom: 16px;
+            color: #4a3b2b;
+        }
+        .main-content ul, .main-content ol {
+            margin: 0 0 20px 25px;
+            color: #4a3b2b;
+        }
+        .main-content li {
+            margin-bottom: 7px;
+        }
+
+        .recipe-box {
+            background: #faf3e8;
+            border-radius: 14px;
+            padding: 24px;
+            margin: 20px 0;
+            border: 1px dashed #d9a066;
+        }
+
+        .ingredient-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .ingredient-tag {
+            background: #fff;
+            border: 1px solid #d9c3a8;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #5a3a1e;
+        }
+
+        .step-list {
+            counter-reset: step;
+            list-style: none;
+            margin-left: 0 !important;
+        }
+        .step-list li {
+            counter-increment: step;
+            position: relative;
+            padding-left: 45px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        .step-list li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #b57a3e;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .tip-box {
+            background: #fff8e1;
+            border-left: 4px solid #e6a817;
+            padding: 16px 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+
+        /* 侧边栏 */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .sidebar-widget {
+            background: #fffdf8;
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid #ecdcbf;
+        }
+        .sidebar-widget h3 {
+            font-size: 1.2rem;
+            color: #4a2e12;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0e0c8;
+        }
+        .sidebar-widget ul {
+            list-style: none;
+        }
+        .sidebar-widget li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #ecdcc5;
+            font-size: 0.95rem;
+        }
+        .sidebar-widget li:last-child {
+            border-bottom: none;
+        }
+        .sidebar-widget li a {
+            color: #6b4c2a;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .sidebar-widget li a:hover {
+            color: #b57a3e;
+        }
+        .rank-num {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: #e8d5b8;
+            color: #5a3a1e;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-right: 8px;
+            line-height: 24px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: #fffdf8;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 15px;
+            border: 1px solid #ecdcbf;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            color: #5a3a1e;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .faq-item p {
+            color: #5c4a38;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #4a2e12;
+            color: #d9c3a8;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+        .footer-col h4 {
+            color: #f0e0c8;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        .footer-col a {
+            color: #c8a67a;
+            text-decoration: none;
+        }
+        .footer-col a:hover {
+            color: #fff;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #6b4c2a;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #a58b6f;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding: 35px 25px;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-img {
+                flex-basis: 200px;
+                width: 200px;
+                height: 200px;
+            }
+            .main-nav li a {
+                padding: 10px 16px;
+            }
+        }
+        @media (max-width: 600px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header-search {
+                width: 100%;
+                margin-top: 10px;
+            }
+            .header-search input {
+                flex: 1;
+                width: auto;
+            }
+            .main-nav ul {
+                flex-wrap: wrap;
+            }
+            .main-nav li a {
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 30px 20px;
+            }
+            .hero-text p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-img {
+                flex-basis: 170px;
+                width: 170px;
+                height: 170px;
+            }
+            .main-content {
+                padding: 20px;
+            }
+            .main-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">🥣</div>
+            <div class="logo-text">咸豆浆<span>·食光</span></div>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="搜索做法、文化...">
+            <button>搜索</button>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">经典做法</a></li>
+                <li><a href="#">地域风味</a></li>
+                <li><a href="#">早餐搭配</a></li>
+                <li><a href="#">食俗文化</a></li>
+                <li><a href="#">常见问题</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <!-- 首屏 -->
+        <section class="hero">
+            <div class="hero-text">
+                <span class="hero-badge">江南传统 · 咸鲜醇厚</span>
+                <h1>一碗咸豆浆，唤醒清晨的烟火气</h1>
+                <p>不同于甜豆浆的温润，咸豆浆是江南街头独有的味觉记忆。滚烫的豆浆冲入碗中，与酱油、虾皮、油条碎瞬间交融，酸咸鲜香，一碗下肚，扎实又满足。</p>
+            </div>
+            <div class="hero-img">
+                <div class="bowl">🥛</div>
+                <div class="caption">咸豆浆 · 经典搭配</div>
+            </div>
+        </section>
+
+        <!-- 特色卡片 -->
+        <section class="features">
+            <div class="feature-card">
+                <span class="icon">🌿</span>
+                <h3>食材朴素</h3>
+                <p>只需豆浆、酱油、醋、虾皮、榨菜、油条等家常食材，就能调出一碗风味十足的咸豆浆。</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">🔥</span>
+                <h3>冲浆艺术</h3>
+                <p>热豆浆高高冲入碗中，瞬间与调料反应，形成絮状凝结，口感嫩滑，这是咸豆浆的灵魂。</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">🍜</span>
+                <h3>饱腹担当</h3>
+                <p>加入油条、紫菜、葱花后，一碗咸豆浆足以提供一上午的能量，是实惠的早餐之选。</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">📍</span>
+                <h3>地域风情</h3>
+                <p>上海、苏州、杭州等地各有特色，有的加辣油，有的放肉松，一碗豆浆藏着地方性格。</p>
+            </div>
+        </section>
+
+        <!-- 主内容 + 侧边栏 -->
+        <div class="content-grid">
+            <div class="main-content">
+                <h2>咸豆浆是什么？</h2>
+                <p>咸豆浆，顾名思义，是以咸味为主要调味方向的豆浆饮品，流行于中国江南地区，尤其在上海、苏州、杭州等城市的早餐摊上十分常见。它与广式甜豆浆、北方淡豆浆形成鲜明对比，是一种将热豆浆与多种咸味配料混合的独特吃法。</p>
+                <p>传统的咸豆浆制作并不复杂：碗中先放入酱油、香醋、虾皮、榨菜末、葱花等底料，再冲入滚烫的浓豆浆。热豆浆遇酸后蛋白质迅速凝结，形成类似豆花般的絮状口感，最后撒上剪碎的油条段，淋几滴辣油或麻油，一碗香气扑鼻的咸豆浆就完成了。</p>
+
+                <h2>经典咸豆浆做法</h2>
+                <p>想在家复刻地道风味，关键在于豆浆的浓度和冲浆的手法。以下是家常咸豆浆的详细步骤：</p>
+                
+                <div class="recipe-box">
+                    <h3>准备配料（一人份）</h3>
+                    <div class="ingredient-list">
+                        <span class="ingredient-tag">浓豆浆 300ml</span>
+                        <span class="ingredient-tag">生抽 1勺</span>
+                        <span class="ingredient-tag">香醋 半勺</span>
+                        <span class="ingredient-tag">虾皮 一小撮</span>
+                        <span class="ingredient-tag">榨菜末 1勺</span>
+                        <span class="ingredient-tag">葱花 适量</span>
+                        <span class="ingredient-tag">油条 半根</span>
+                        <span class="ingredient-tag">辣油/麻油 几滴</span>
+                    </div>
+                </div>
+
+                <h3>制作步骤</h3>
+                <ol class="step-list">
+                    <li><strong>准备碗底：</strong>取一个大碗，放入生抽、香醋、虾皮、榨菜末和一半葱花。如果喜欢辣味，此时可以加一小勺辣油。</li>
+                    <li><strong>煮豆浆：</strong>将无糖的浓豆浆加热至完全沸腾。注意豆浆假沸现象，务必彻底煮透。如果是自制豆浆，建议过滤掉豆渣，口感更顺滑。</li>
+                    <li><strong>冲浆：</strong>将滚烫的豆浆从约20厘米高处迅速冲入碗中。高温与醋的反应会让豆浆立刻出现絮状凝结，形成类似豆花的口感。</li>
+                    <li><strong>静置定型：</strong>冲好后不要搅动，静置30秒左右，让凝结更充分。</li>
+                    <li><strong>加配料：</strong>将油条剪成小段，铺在豆浆表面，撒上剩余的葱花，淋几滴麻油增香。</li>
+                    <li><strong>享用：</strong>用勺子从底部舀起，让调味料与豆浆充分融合，趁热食用风味最佳。</li>
+                </ol>
+
+                <div class="tip-box">
+                    <strong>小贴士：</strong>醋是让豆浆凝结的关键，但不宜过多，否则会过酸。建议先放半勺，冲浆后尝味再调整。油条要最后放，才能保持酥脆口感。
+                </div>
+
+                <h2>咸豆浆的营养价值</h2>
+                <p>豆浆本身富含植物蛋白、卵磷脂和多种维生素，而咸豆浆通过搭配虾皮、榨菜等配料，进一步增加了钙、膳食纤维和风味的层次感。相比甜豆浆，咸豆浆的钠含量较高，因此高血压人群应适量食用，并减少酱油和榨菜的用量。</p>
+                <p>一碗标准的咸豆浆（约300毫升）加上半根油条，总热量大约在200-300千卡之间，作为早餐既能提供蛋白质和碳水化合物，又能带来较长时间的饱腹感，适合体力劳动者或上午需要集中精力的人群。</p>
+
+                <h2>各地咸豆浆的特色</h2>
+                <p>虽然都叫咸豆浆，但不同城市的做法各有巧思：</p>
+                <ul>
+                    <li><strong>上海咸豆浆：</strong>讲究配料丰富，虾皮、榨菜、油条、紫菜、葱花一样不少，还会淋上辣油，味道浓烈。</li>
+                    <li><strong>苏州咸豆浆：</strong>口味相对温和，有时会加一点猪油渣，增加脂香，油条通常剪得较大块。</li>
+                    <li><strong>杭州咸豆浆：</strong>部分老店会加入肉松或咸蛋黄，口感更加丰腴，甚至有人会加一小勺猪油。</li>
+                    <li><strong>绍兴咸豆浆：</strong>喜欢用当地的霉干菜或笋干作为配料，别有一番咸鲜风味。</li>
+                </ul>
+                <p>这些差异反映了不同地域的饮食偏好，也让咸豆浆成为一道充满变化可能的民间小吃。</p>
+
+                <h2>咸豆浆与甜豆浆之争</h2>
+                <p>在互联网上，咸豆浆与甜豆浆的“南北之争”从未停歇。甜豆浆拥护者认为豆浆本就该清甜顺滑，而咸豆浆爱好者则迷恋其咸鲜浓郁的口感。事实上，这种争论背后是多元的饮食文化选择。</p>
+                <p>从历史角度看，咸豆浆的出现与江南地区早餐习惯密切相关。在过去，豆浆常与油条、大饼等咸味早点一同食用，将油条泡入咸豆浆中，既省事又美味。而甜豆浆更多流行于广东及部分北方地区，与甜品文化结合。两种吃法并无高下之分，只是不同地域味觉记忆的体现。</p>
+
+                <h2>如何选择适合做咸豆浆的豆浆</h2>
+                <p>并非所有豆浆都适合做咸豆浆。理想的咸豆浆应该使用<strong>浓度较高、无糖的原味豆浆</strong>。市售的甜豆浆或低浓度豆浆，冲浆后难以形成漂亮的絮状凝结，口感也会寡淡。</p>
+                <p>如果使用豆浆粉冲泡，建议比说明书多放一些粉，使豆浆浓度接近传统石磨豆浆。自制豆浆则建议使用1:6至1:8的豆水比例（黄豆与水的重量比），并彻底煮沸。有条件的话，用盐卤或石膏点浆的豆腐脑做法，其实与咸豆浆原理相通，只是凝固剂不同。</p>
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>热门咸豆浆做法</h3>
+                    <ul>
+                        <li><span class="rank-num">1</span><a href="#">上海风味咸豆浆</a></li>
+                        <li><span class="rank-num">2</span><a href="#">老式咸豆浆（醋点法）</a></li>
+                        <li><span class="rank-num">3</span><a href="#">咸豆浆配粢饭团</a></li>
+                        <li><span class="rank-num">4</span><a href="#">空气炸锅油条配咸浆</a></li>
+                        <li><span class="rank-num">5</span><a href="#">减盐健康版咸豆浆</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>经典搭配推荐</h3>
+                    <ul>
+                        <li>🥢 咸豆浆 + 大饼油条</li>
+                        <li>🥟 咸豆浆 + 生煎馒头</li>
+                        <li>🍙 咸豆浆 + 粢饭团</li>
+                        <li>🥚 咸豆浆 + 茶叶蛋</li>
+                        <li>🫓 咸豆浆 + 葱油饼</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>你可能想知道</h3>
+                    <ul>
+                        <li><a href="#">豆浆为什么会凝结？</a></li>
+                        <li><a href="#">咸豆浆可以加什么配料？</a></li>
+                        <li><a href="#">咸豆浆能隔夜保存吗？</a></li>
+                        <li><a href="#">低脂咸豆浆怎么做？</a></li>
+                        <li><a href="#">咸豆浆和豆腐脑的区别</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FAQ 区域 -->
+        <section style="margin: 30px 0 50px;">
+            <h2 style="font-size: 1.8rem; color: #3a2208; border-left: 5px solid #b57a3e; padding-left: 18px; margin-bottom: 25px;">咸豆浆常见问题</h2>
+            <div class="faq-item">
+                <h3>❓ 咸豆浆和豆腐脑有什么区别？</h3>
+                <p>豆腐脑通常使用盐卤或石膏作为凝固剂，将豆浆完全点成固体状，再浇卤汁食用。而咸豆浆只是利用醋或酱油中的酸性，让豆浆部分凝结成絮状，整体仍是可流动的汤羹质地，口感更稀薄、清爽。</p>
+            </div>
+            <div class="faq-item">
+                <h3>❓ 为什么我冲的咸豆浆不凝结？</h3>
+                <p>可能原因有三个：豆浆浓度太低（建议用浓豆浆）；豆浆温度不够（必须彻底沸腾，刚离火就冲）；醋或酱油放得太少（酸性不足难以触发蛋白质凝固）。此外，使用甜豆浆或含有添加剂的豆浆也会影响凝结效果。</p>
+            </div>
+            <div class="faq-item">
+                <h3>❓ 咸豆浆可以加肉松或咸蛋黄吗？</h3>
+                <p>当然可以。杭州一带就有加肉松的吃法，咸蛋黄也能增加沙沙的口感和油脂香气。只要不影响整体咸鲜平衡，完全可以自由发挥。</p>
+            </div>
+            <div class="faq-item">
+                <h3>❓ 咸豆浆适合减脂期吃吗？</h3>
+                <p>咸豆浆本身热量不高，但油条和额外添加的辣油会增加热量。减脂期可以选择不放油条，多加虾皮和紫菜，用少量麻油提香，这样一碗热量可以控制在150千卡以内。</p>
+            </div>
+            <div class="faq-item">
+                <h3>❓ 喝不完的咸豆浆能保存吗？</h3>
+                <p>不建议保存。咸豆浆冲好后应尽快食用，久置会分层、出水，口感变差。如果有剩余，可以密封冷藏保存一天，但复热后絮状结构会被破坏，只能作为类似豆花汤食用，风味大打折扣。</p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于我们</h4>
+                <ul>
+                    <li>专注传统早餐文化</li>
+                    <li>分享地道家常做法</li>
+                    <li>探索地方饮食故事</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>内容栏目</h4>
+                <ul>
+                    <li><a href="#">经典食谱</a></li>
+                    <li><a href="#">城市风味</a></li>
+                    <li><a href="#">食材百科</a></li>
+                    <li><a href="#">早餐文化</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>互动交流</h4>
+                <ul>
+                    <li><a href="#">提交你的配方</a></li>
+                    <li><a href="#">读者来稿</a></li>
+                    <li><a href="#">建议反馈</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 咸豆浆·食光 ｜ 用心记录每一碗人间烟火</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
